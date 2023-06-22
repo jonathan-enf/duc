@@ -54,7 +54,7 @@ void progress_cb(struct duc_index_report *rep, void *ptr)
 	duc_human_number(rep->file_count, opt_bytes, fs, sizeof fs);
 	duc_human_number(rep->dir_count, opt_bytes, ds, sizeof ds);
 
-	printf("\e[K[%s] Indexed %sb in %s files and %s directories\r", meter, siz, fs, ds);
+	printf("\e[K[%s] Indexed %sB in %s files and %s directories\r", meter, siz, fs, ds);
 	fflush(stdout);
 }
 
